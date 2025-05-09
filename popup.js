@@ -210,6 +210,8 @@ clearCookiesBtn.onclick = async () => {
   if (!tab.url.startsWith(`https://${domain}`)) {
     return alert(`Please open grok (${domain}) website first.`);
   }
+  
+  // Clear grok.com cookies
   const existingCookies = await chrome.cookies.getAll({ domain });
   await Promise.all(existingCookies.map(c =>
     chrome.cookies.remove({
@@ -218,11 +220,29 @@ clearCookiesBtn.onclick = async () => {
     })
   ));
   
+  // Clear x.ai cookies
+  const xaiCookies = await chrome.cookies.getAll({ domain: 'x.ai' });
+  await Promise.all(xaiCookies.map(c =>
+    chrome.cookies.remove({
+      url: `https://x.ai${c.path}`,
+      name: c.name
+    })
+  ));
+  
+  // Clear accounts.x.ai cookies
+  const accountsXaiCookies = await chrome.cookies.getAll({ domain: 'accounts.x.ai' });
+  await Promise.all(accountsXaiCookies.map(c =>
+    chrome.cookies.remove({
+      url: `https://accounts.x.ai${c.path}`,
+      name: c.name
+    })
+  ));
+  
   // Reset current account
   chrome.storage.local.get(['accounts'], ({ accounts = {} }) => {
     chrome.storage.local.set({ currentAccount: null }, () => {
       renderAccounts(accounts, null);
-      alert('All current grok.com cookies have been cleared and account reset.');
+      alert('All current grok.com, x.ai, and accounts.x.ai cookies have been cleared and account reset.');
       chrome.tabs.reload(tab.id);
     });
   });

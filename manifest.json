@@ -10,7 +10,9 @@
       "scripting"
     ],
     "host_permissions": [
-      "https://grok.com/*"
+      "https://grok.com/*",
+      "https://x.ai/*",
+      "https://accounts.x.ai/*"
     ],
     "action": {
       "default_popup": "popup.html"

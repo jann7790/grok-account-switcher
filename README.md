@@ -2,6 +2,9 @@
 
 A Chrome extension that allows you to easily switch between multiple Grok.com accounts.
 
+![alt text](image.png)
+
+
 ## Features
 
 - Save multiple Grok.com accounts
@@ -15,8 +18,6 @@ A Chrome extension that allows you to easily switch between multiple Grok.com ac
 
 - **Do not log out** when adding a new account, as this will cause cookies to expire
 - To add a new account, just clear cookies first using the green "Clear Cookies" button, then log in to the new account
-
-
 
 
 
