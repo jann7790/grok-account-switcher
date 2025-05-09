@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "ChatGPT Account Switcher",
+    "name": "grok Account Switcher",
     "version": "1.0",
-    "description": "Quickly switch between multiple ChatGPT accounts.",
+    "description": "Quickly switch between multiple grok accounts.",
     "permissions": [
       "cookies",
       "storage",
@@ -10,11 +10,14 @@
       "scripting"
     ],
     "host_permissions": [
-      "https://chat.openai.com/*",
-      "https://chatgpt.com/*"
+      "https://grok.com/*"
     ],
     "action": {
       "default_popup": "popup.html"
-    }
+    },
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
   }
-  
+  }

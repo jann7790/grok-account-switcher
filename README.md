@@ -1,43 +1,22 @@
-# chatgpt-account-switcher
+# Grok Account Switcher
 
-Easily switch between multiple ChatGPT accounts with this Chrome extension! 🚀
+A Chrome extension that allows you to easily switch between multiple Grok.com accounts.
 
-This extension allows you to save, switch, and manage multiple ChatGPT accounts effortlessly. It works by securely storing your cookies, localStorage, and sessionStorage, enabling seamless account switching without the hassle of logging in and out manually.
+## Features
 
-🔥 Key Features:
+- Save multiple Grok.com accounts
+- Switch between saved accounts with a single click
+- Delete saved accounts
+- View storage usage
+- Clear cookies for the current Grok session
+- Reset current account status
 
-✅ Save multiple ChatGPT accounts with just one click.
+## How to Use
 
-✅ Switch accounts instantly without re-entering credentials.
+- **Do not log out** when adding a new account, as this will cause cookies to expire
+- To add a new account, just clear cookies first using the green "Clear Cookies" button, then log in to the new account
 
-✅ Securely store cookies and session data for each account.
 
-✅ Automatically reload the page to apply account changes.
 
-✅ Delete or clear saved accounts anytime.
 
-Perfect for users who manage multiple ChatGPT accounts for work, study, or different AI personas. Say goodbye to constant logins and enjoy a smoother experience! 🎉
 
-⚠️ Note: This extension does not bypass ChatGPT’s security policies. It simply helps manage stored session data more efficiently.
-
-### Usage:
-- git clone/download zip https://github.com/jzoker/chatgpt-account-switcher/
-
-- Open Google Chrome.
-
-- Go to chrome://extensions/.
-
-- Enable Developer mode (top right corner).
-
-- Click "Load unpacked".
-
-- Select the folder where you clone the extension.
-
-- The extension should now appear in your Chrome toolbar.
-
-- If needed, pin it by clicking the puzzle icon 🧩 in the toolbar.
-
-- Open chat.openai.com, and save the account
-
-### Store:
-- https://chromewebstore.google.com/detail/chatgpt-account-switcher/blfjijcafmiginiijkabpigfpcegkglc
